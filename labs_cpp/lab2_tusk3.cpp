@@ -21,7 +21,7 @@ int main(){
     link2 += 2;
     std::cout << "n=" << n << " link1=" << link1 << " link2=" << link2 << std::endl;
 
-    std::cout << func(2) << std::endl;
+    std::cout << func(2);
 
     int num1 = 4;
     int num2 = 6;
