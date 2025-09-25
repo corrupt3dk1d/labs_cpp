@@ -16,10 +16,10 @@ int main() {
     int arr[3] = {1, 2, 3};
     int *p1 = arr;
     int *p2 = arr + 2;
-    std::cout << func(p1, p2);
+    std::cout << func(p1, p2) << std::endl;
 
-    int (*testf)(int, int) = function('+');
-    std::cout << testf(3, 3) << std::endl;
+    int (*testf)(int, int) = function('-');
+    std::cout << testf(3, 4) << std::endl;
 
     float *pf = new float(13.55);
     std::cout << pf;
@@ -38,6 +38,6 @@ int minus(int a, int b) {
 }
 int (*function(char op))(int, int) {
     if (op == '+') return plus;
-    if (op == '0') return minus;
+    if (op == '-') return minus;
     return nullptr;
 }
