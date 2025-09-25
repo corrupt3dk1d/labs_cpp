@@ -9,11 +9,3 @@ int main() {
     cout << MAX(3, 4);
     return 0;
 }
-
-namespace MySpace {
-    void func(int n) {
-        static int static_n = 0;
-        cout << n + static_n << endl;
-        static_n = n;
-    }
-}
